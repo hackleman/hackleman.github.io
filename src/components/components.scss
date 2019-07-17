@@ -100,6 +100,9 @@
         line-height: 1.5rem;
         // font-size: 30px;
     }
+    .line-break {
+        display: none;
+    }
     .card2 {
         grid-row: 5 / 7;
         grid-column: 7 / 11;
@@ -108,6 +111,9 @@
         font-family: 'Lato', sans-serif;
         line-height: 1.5rem;
         // font-size: 30px;
+    }
+    .line-break2 {
+        display: none;
     }
     .card3 {
         grid-row: 5 / 7;
@@ -134,40 +140,44 @@
                 margin-left: 20px;
                 font-weight: 600;
                 font-family: 'Lato', sans-serif;
-                font-size: 90px;
+                font-size: 85px;
             }
         }
         .card1{
             grid-row: 4 / 6;
-            grid-column: 2 / 58;
-            margin-left: 0vh;
+            grid-column: 1 / 58;
+            margin-left: 5vh;
             width: 75vw;
         }
         .line-break {
             grid-row: 6 / 9;
-            grid-column: 2 / 8;
+            grid-column: 1 / 8;
             z-index: 10;
-            width: 100%;
-            margin-left: -2vh;
+            display: flex;
+            width: 70vw;
+            margin-left: 5vh;
             margin-bottom: 5vh;
         }
         .card2 {
             grid-row: 9 / 11;
-            grid-column: 2 / 8;
+            grid-column: 1 / 8;
             width: 75vw;
+            margin-left: 5vh;
         }
         .line-break2 {
             grid-row: 11 / 14;
-            grid-column: 2 / 8;
+            grid-column: 1 / 8;
             z-index: 10;
-            width: 100%;
-            margin-left: -2vh;
+            display: flex;
+            width: 70vw;
+            margin-left: 5vh;
             margin-bottom: -2vh;
         }
         .card3 {
             grid-row: 14 / 16;
-            grid-column: 2 / 8;
+            grid-column: 1 / 8;
             width: 75vw;
+            margin-left: 5vh;
         }
     }
 }
@@ -223,8 +233,8 @@
         }
         .card1 {
             grid-row: 5 / 11;
-            grid-column: 2 / 20;
-            width: 50%;
+            grid-column: 1 / 20;
+            width: 85vw;
             // width: 25vw;
             // color: #1F2021;
             // font-family: 'Lato', sans-serif;
@@ -233,16 +243,17 @@
         }
         .line-break {
             grid-row: 12 / 14;
-            grid-column: 2 / 16;
+            grid-column: 1 / 16;
             z-index: 10;
-            width: 70%;
-            margin-left: -3vh;
+            display: flex;
+            width: 85vw;
+            margin-left: 3vh;
             margin-bottom: 8vh;
         }
         .card2 {
             grid-row: 14 / 21;
-            grid-column: 2 / 20;
-            width: 50%;
+            grid-column: 1 / 20;
+            width: 85vw;
             // width: 25vw;
             // color: #1F2021;
             // font-family: 'Lato', sans-serif;
@@ -251,16 +262,17 @@
         }
         .line-break2 {
             grid-row: 21 / 24;
-            grid-column: 2 / 16;
+            grid-column: 1 / 16;
             z-index: 10;
-            width: 70%;
-            margin-left: -3vh;
+            display: flex;
+            width: 85vw;
+            margin-left: 3vh;
             margin-bottom: 2.5vh;
         }
         .card3 {
             grid-row: 23 / 31;
-            grid-column: 2 / 20;
-            width: 50%;
+            grid-column: 1 / 20;
+            width: 85vw;
             // width: 25vw;
             // color: #1F2021;
             // font-family: 'Lato', sans-serif;
