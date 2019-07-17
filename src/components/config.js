@@ -3,7 +3,7 @@ module.exports = {
     project1: {
         title: 'Taxi Insights',
         tech: 'React, PostgreSQL, Express, HTML/CSS',
-        description: 'Taxi Insights is an app that lets you interactively explore the NYC TLC data set.  The app features beautifully rendered Charts and Chloropleth Maps. Queries are displayed and animated in real time.'
+        description: 'Taxi Insights is an app that lets you interactively explore the NYC TLC data set.  The app renders and animates Charts and Chloropleth Maps in real-time.'
     },
     project2: {
         title: 'Ultimate Software™ Hackathon App ',

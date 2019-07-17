@@ -3,6 +3,7 @@ import ProjectCard from './ProjectCard.js';
 import project1img from '../assets/taxiinsights-01.svg';
 import project2img from '../assets/ultimate.svg';
 import project3img from '../assets/python.svg';
+import linebreak from '../assets/break-01.svg';
 import './components.scss';
 
 class Projects extends Component {
@@ -18,14 +19,21 @@ class Projects extends Component {
                   image = {project1img}
                   />
               </div>
-              <hr/>
+             <img 
+                src = {linebreak}
+                className = "line-break" 
+              />
               <div className = "card2">
                 <ProjectCard
                   options = 'project2'
                   image = {project2img}
                    />
               </div>
-              <hr/>
+              <img 
+                src = {linebreak}
+                className = "line-break2" 
+              />
+              
               <div className = "card3">
                 <ProjectCard
                   options = 'project3'

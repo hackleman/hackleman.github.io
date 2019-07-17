@@ -14,6 +14,7 @@ class ProjectCard extends Component {
       componentDidMount() {
 
       }
+
       render() {
           return (
             <Card fluid>
@@ -28,6 +29,7 @@ class ProjectCard extends Component {
                     <Card.Meta>
                         <span className='date'>{this.state.options.tech}</span>
                     </Card.Meta>
+                    
                     <Card.Description>
                         {this.state.options.description}
                     </Card.Description>
@@ -38,12 +40,12 @@ class ProjectCard extends Component {
                         Live Demo
                     </a>
                 </Card.Content>
-                <Card.Content extra>
+                {/* <Card.Content extra>
                     <a>
                         <Icon name='github' />
                         Code
                     </a>
-                </Card.Content>
+                </Card.Content> */}
             </Card>
           )
       }
