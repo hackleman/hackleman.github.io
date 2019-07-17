@@ -1,4 +1,9 @@
-<svg id="Group_597" data-name="Group 597" xmlns="http://www.w3.org/2000/svg" width="79" height="14.249" viewBox="0 0 79 14.249">
-  <path id="bars" d="M.634,62.338H17.128a.586.586,0,0,0,.634-.519v-1.3A.586.586,0,0,0,17.128,60H.634A.586.586,0,0,0,0,60.519v1.3A.586.586,0,0,0,.634,62.338Zm0,5.195H17.128a.586.586,0,0,0,.634-.519v-1.3a.586.586,0,0,0-.634-.519H.634A.586.586,0,0,0,0,65.714v1.3A.586.586,0,0,0,.634,67.533Zm0,5.195H17.128a.586.586,0,0,0,.634-.519v-1.3a.586.586,0,0,0-.634-.519H.634A.586.586,0,0,0,0,70.909v1.3A.586.586,0,0,0,.634,72.728Z" transform="translate(0 -60)" fill="rgba(0,0,0,0.6)"/>
-  <text id="MENU" transform="translate(36 11.249)" fill="rgba(0,0,0,0.6)" font-size="14" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="0" y="0">MENU</tspan></text>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Group_597" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 17.8 14.2" style="enable-background:new 0 0 17.8 14.2;" xml:space="preserve">
+<path id="bars" d="M0.6,2.3h16.5c0.3,0,0.6-0.2,0.6-0.5V0.5c0-0.3-0.3-0.5-0.6-0.5H0.6C0.3,0,0,0.2,0,0.5v1.3C0,2.1,0.3,2.4,0.6,2.3
+	z M0.6,7.5h16.5c0.3,0,0.6-0.2,0.6-0.5V5.7c0-0.3-0.3-0.5-0.6-0.5H0.6C0.3,5.2,0,5.4,0,5.7V7C0,7.3,0.3,7.6,0.6,7.5z M0.6,12.7h16.5
+	c0.3,0,0.6-0.2,0.6-0.5v-1.3c0-0.3-0.3-0.5-0.6-0.5H0.6c-0.3,0-0.6,0.2-0.6,0.5v1.3C0,12.5,0.3,12.8,0.6,12.7z"/>
+<text transform="matrix(1 0 0 1 36 11.249)" style="font-family:'Lato-Bold'; font-size:14px;">MENU</text>
 </svg>

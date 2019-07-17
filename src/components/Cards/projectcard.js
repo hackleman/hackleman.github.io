@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Card, Icon, Image } from 'semantic-ui-react'
-import config from './config.js';
+import config from '../config.js';
 
 
 class ProjectCard extends Component {
@@ -35,10 +35,18 @@ class ProjectCard extends Component {
                     </Card.Description>
                 </Card.Content>
                 <Card.Content extra>
-                    <a href = 'https://sheltered-badlands-70867.herokuapp.com/'>
-                        <Icon name='play' />
-                        Live Demo
-                    </a>
+                        <a 
+                            className = "card-content-link"
+                            href = 'https://sheltered-badlands-70867.herokuapp.com/'>
+                            <Icon name='play' />
+                            Live Demo
+                        </a>
+
+                        <a href = 'https://sheltered-badlands-70867.herokuapp.com/'>
+                            <Icon name='play' />
+                            Live Demo
+                        </a>
+
                 </Card.Content>
                 {/* <Card.Content extra>
                     <a>

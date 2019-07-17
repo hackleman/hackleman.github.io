@@ -1,4 +1,10 @@
 // NavBar
+.ui.card>.extra {
+
+    display: none !important;
+
+
+}
 .navbar {
     position: fixed;
     top: 0;
