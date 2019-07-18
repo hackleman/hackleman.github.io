@@ -5,128 +5,206 @@
     height: 100vh;
     background-color: #1F2021;
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(20, 5vw);
-    grid-template-rows: repeat(6, 15vh);
+    // grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
     align-items: center;
 
     .header-container {
-        grid-row: 2 / 3;
-        grid-column: 2 / 5;
-        margin-top: 0 !important;
-        
+        margin-left: 2rem;
         .header {
             display: flex;
-            justify-content: flex-start;
-
-            
+            justify-content: flex-start;  
             color: #f4f4f4;
             font-family: 'Lato', sans-serif;
             font-weight: 500;
-            font-size: 110px;
+            font-size: 165px;
         }
     }
     .body-container {
-        grid-row: 3 / 6;
-        grid-column: 2 / 14;
+        margin-left: 3rem;
             .body {
             display: flex;
+            flex-direction: column;
             justify-content: flex-start;
-
             color: #f4f4f4;
-            font-weight: 300;
+            font-weight: 400;
             font-family: 'Lato', sans-serif;
-            font-size: 30px;
+            font-size: 35px;
             line-height: 1.5em; 
         }
     }
-    .resume-button {
-        grid-row: 5 / 7;
-        grid-column: 2 / 4;
+    .button-container {
+        margin-left: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 85%;
+        border-width: 0px;
+        #landing-button-1 {
+            height: 7.5vw;
+            width: 20vw;
+            color: #f4f4f4;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 40px;
+            border-radius: 40px;
+            border-style: outset;
+            padding: 0;
+            transition: .4s;
+        }
+        #landing-button-1:hover {
+            color: #1f2021;
+        }
+        #landing-button-1:focus {
+            color: #1f2021;
+        }
     }
-    .projects-button {
-        grid-row: 5 / 7;
-        grid-column: 6 / 8;
-    }
-    .contact-button {
-        grid-row: 5 / 7;
-        grid-column: 10 / 12;
-    }
-    #landing-button-1 {
-        height: 100px;
-        width: 250px;
-        color: #f4f4f4;
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        font-size: 40px;
-        border-radius: 40px;
-        border-style: outset;
-        padding: 0;
-    }
-    #landing-button-1:hover {
-        color: #1f2021;
-    }
-    #landing-button-1:focus {
-        color: #1f2021;
-    }
+
+
 
 }
 
-@media (max-width: 340px) {
-    
-    .landing {
+
+@media (max-width: 1024px) {
+    .landing {    
         .header-container {
-            grid-row: 1 / 3;
-            grid-column: 1 / 5;
             .header {
-                margin-left: 5vh !important;
-                font-size: 90px;
+                font-size: 200px;
             }
         }
         .body-container {
-            grid-row: 3 / 6;
-            grid-column: 2 / 10;
             .body {
-                width: 85%;
-                margin-left: 5vh !important;
-                line-height: 1em;
-                font-size: 24px;
+                font-size: 35px;
             }
         }
+        .button-container {
+            #landing-button-1 {
+                height: 100px;
+                width: 250px;
+                color: #f4f4f4;
+                font-weight: 400;
+                font-size: 50px;
+            }
+            #landing-button-1:hover {
+                color: #1f2021;
+            }
+            #landing-button-1:focus {
+                color: #1f2021;
+            }
+        }
+
     }
+}
+
+@media (max-width: 768px) {
+
+    .landing {    
+        .header-container {
+            .header {
+                font-size: 200px;
+            }
+        }
+        .body-container {
+            width: 90vw;
+            .body {
+                font-size: 35px;
+            }
+        }
+        .button-container {
+            flex-direction: row;
+            justify-content: center;
+            #landing-button-1 {
+                height: 75px;
+                width: 150px;
+                border-radius: 20px;
+                color: #f4f4f4;
+                font-weight: 400;
+                font-size: 35px;
+            }
+            #landing-button-1:hover {
+                color: #1f2021;
+            }
+            #landing-button-1:focus {
+                color: #1f2021;
+            }
+        }
+
+    }
+
 }
 
 @media (max-width: 440px) {
-    .landing {
+    .landing {    
         .header-container {
-            grid-row: 1 / 3;
-            grid-column: 1 / 5;
             .header {
-                margin-left: 5vh !important;
+                font-size: 120px;
             }
         }
         .body-container {
-            grid-row: 3 / 6;
-            grid-column: 2 / 10;
             .body {
-                width: 85%;
-                margin-left: 5vh !important;
-                line-height: 1em;
+                font-size: 30px;
             }
         }
+        .button-container {
+            margin-top: 50px;
+            flex-direction: row;
+            justify-content: space-between;
+            #landing-button-1 {
+                height: 50px;
+                width: 100px;
+                color: #f4f4f4;
+                font-weight: 400;
+                font-size: 22px;
+                border: none !important;
+                border-radius: 15px;
+            }
+            #landing-button-1:hover {
+                color: #1f2021;
+            }
+            #landing-button-1:focus {
+                color: #1f2021;
+            }
+        }
+
     }
 }
 
-@media (max-width: 1024px) {
-    .landing{
-        .resume-button{
-            display: none;
+@media (max-width: 320px) {
+    .landing {    
+        .header-container {
+            .header {
+                margin-left: 0vh;
+                font-size: 100px;
+            }
         }
-        .projects-button{
-            display: none;
+        .body-container {
+            margin-left: 5vh;
+            .body {
+                
+                font-size: 20px;
+            }
         }
-        .contact-button{
-            display: none;
+        .button-container {
+            margin-top: 0px;
+            margin-left: 1vh;
+            flex-direction: row;
+            justify-content: space-between;
+            #landing-button-1 {
+                height: 50px;
+                width: 100px;
+                color: #f4f4f4;
+                font-weight: 400;
+                font-size: 22px;
+                border: none !important;
+                border-radius: 15px;
+            }
+            #landing-button-1:hover {
+                color: #1f2021;
+            }
+            #landing-button-1:focus {
+                color: #1f2021;
+            }
         }
+
     }
 }
