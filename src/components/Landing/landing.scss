@@ -40,6 +40,7 @@
         justify-content: space-evenly;
         width: 85%;
         border-width: 0px;
+        margin-bottom: 10vh;
         #landing-button-1 {
             height: 7.5vw;
             width: 20vw;
@@ -50,7 +51,7 @@
             border-radius: 40px;
             border-style: outset;
             padding: 0;
-            transition: .4s;
+            transition: .3s;
         }
         #landing-button-1:hover {
             color: #1f2021;
@@ -101,7 +102,7 @@
     .landing {    
         .header-container {
             .header {
-                font-size: 200px;
+                font-size: 165px;
             }
         }
         .body-container {
@@ -112,7 +113,7 @@
         }
         .button-container {
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-evenly;
             #landing-button-1 {
                 height: 75px;
                 width: 150px;
@@ -136,19 +137,25 @@
 @media (max-width: 440px) {
     .landing {    
         .header-container {
+            margin-left: 2.5rem;
             .header {
                 font-size: 120px;
+                
             }
         }
         .body-container {
+            width: 80vw;
             .body {
-                font-size: 30px;
+                font-size: 25px;
             }
         }
         .button-container {
-            margin-top: 50px;
+            margin-top: 75px;
+            margin-left: 5vw;
+            width: 90vw;
             flex-direction: row;
-            justify-content: space-between;
+            
+            justify-content: space-evenly;
             #landing-button-1 {
                 height: 50px;
                 width: 100px;
@@ -172,6 +179,7 @@
 @media (max-width: 320px) {
     .landing {    
         .header-container {
+            margin-left: 1.5rem;
             .header {
                 margin-left: 0vh;
                 font-size: 100px;
@@ -185,16 +193,17 @@
             }
         }
         .button-container {
-            margin-top: 0px;
-            margin-left: 1vh;
+            margin-top: 20px;
+            margin-left: 0vh;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            width: 100vw;
             #landing-button-1 {
-                height: 50px;
-                width: 100px;
+                height: 45px;
+                width: 90px;
                 color: #f4f4f4;
                 font-weight: 400;
-                font-size: 22px;
+                font-size: 20px;
                 border: none !important;
                 border-radius: 15px;
             }

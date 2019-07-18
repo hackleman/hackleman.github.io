@@ -29,31 +29,7 @@ class ProjectCard extends Component {
                     <Card.Meta>
                         <span className='date'>{this.state.options.tech}</span>
                     </Card.Meta>
-                    
-                    <Card.Description>
-                        {this.state.options.description}
-                    </Card.Description>
                 </Card.Content>
-                <Card.Content extra>
-                        <a 
-                            className = "card-content-link"
-                            href = 'https://sheltered-badlands-70867.herokuapp.com/'>
-                            <Icon name='play' />
-                            Live Demo
-                        </a>
-
-                        <a href = 'https://sheltered-badlands-70867.herokuapp.com/'>
-                            <Icon name='play' />
-                            Live Demo
-                        </a>
-
-                </Card.Content>
-                {/* <Card.Content extra>
-                    <a>
-                        <Icon name='github' />
-                        Code
-                    </a>
-                </Card.Content> */}
             </Card>
           )
       }
