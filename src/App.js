@@ -10,7 +10,6 @@ import './App.scss';
 function App() {
   return (
     <div>
-        <NavBar />
         <LandingSection />
         <ProjectSection />
         <SkillSection />

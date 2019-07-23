@@ -1,5 +1,4 @@
 .landing {
-    position: relative;
     top: 10vh;
     width: 100%;
     height: 100vh;
@@ -7,10 +6,11 @@
     display: grid;
     // grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
-    align-items: center;
+    align-items: top;
 
     .header-container {
         margin-left: 2rem;
+        align-self: center;
         .header {
             display: flex;
             justify-content: flex-start;  
@@ -22,6 +22,7 @@
     }
     .body-container {
         margin-left: 3rem;
+        align-self: start;
             .body {
             display: flex;
             flex-direction: column;
@@ -34,30 +35,79 @@
         }
     }
     .button-container {
-        margin-left: 3rem;
         display: flex;
-        flex-direction: row;
         justify-content: space-evenly;
-        width: 85%;
+        position: absolute;
+        width: 100vw;
+        top: 85vh;
+        z-index: 1000;
         border-width: 0px;
-        margin-bottom: 10vh;
+        padding-top: 5vh;
+        .resume-button {
+            height: 10vh;
+        }
+        .contact-button {
+            height: 10vh;
+        }
+        .projects-button {
+            height: 10vh;
+        }
         #landing-button-1 {
-            height: 7.5vw;
+            height: 10vh;
             width: 20vw;
             color: #f4f4f4;
             font-family: 'Lato', sans-serif;
             font-weight: 400;
             font-size: 40px;
-            border-radius: 40px;
-            border-style: outset;
             padding: 0;
-            transition: .3s;
+            
         }
         #landing-button-1:hover {
             color: #1f2021;
         }
         #landing-button-1:focus {
             color: #1f2021;
+        }
+    }
+    .scrolllock {
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        width: 100vw;
+        height: 10vh;
+        background: #1f2021;
+        padding-top: 5vh;
+        top: 0vh;
+        z-index: 1000;
+        border-width: 0px;
+
+        .resume-button {
+            height: 10vh;
+        }
+        .contact-button {
+            height: 10vh;
+        }
+        .projects-button {
+            height: 10vh;
+        }
+        #landing-button-1 {
+            height: 10vh;
+            width: 20vw;
+            color: #f4f4f4;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 40px;
+            border-radius: 40px;
+            padding: 0;
+            
+        }
+        #landing-button-1:hover {
+            color: #e0e1e2;
+            cursor: pointer;
+        }
+        #landing-button-1:focus {
+            color: #1f2021;
+            cursor: pointer;
         }
     }
 
