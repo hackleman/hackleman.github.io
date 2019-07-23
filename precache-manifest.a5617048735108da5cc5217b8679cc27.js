@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "441e4db3634ef667956103ffb7ddf0d0",
+    "revision": "4a8bb5d436e69b5e4842c2c95a57e15b",
     "url": "/index.html"
   },
   {
-    "revision": "49a0865bb982336a0afa",
-    "url": "/static/css/main.5f9cecf1.chunk.css"
+    "revision": "8b51cc2ec774216bbc8c",
+    "url": "/static/css/main.02a427a9.chunk.css"
   },
   {
-    "revision": "15264075eb018608f32d",
-    "url": "/static/js/2.94ad6fdf.chunk.js"
+    "revision": "09520b9f57dd50766c67",
+    "url": "/static/js/2.524dfba0.chunk.js"
   },
   {
-    "revision": "49a0865bb982336a0afa",
-    "url": "/static/js/main.bcc5e593.chunk.js"
+    "revision": "8b51cc2ec774216bbc8c",
+    "url": "/static/js/main.83b13547.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/python.62a7aae3.svg"
   },
   {
-    "revision": "623adc1a3d95994458ee8abead1e443c",
-    "url": "/static/media/taxiinsights-01.623adc1a.svg"
+    "revision": "c85a66fbb78b6e00c795e8571ea22d3b",
+    "url": "/static/media/taxiinsights-01.c85a66fb.svg"
   },
   {
     "revision": "af0992002df2285b0c36e3b01f3f1c6a",
