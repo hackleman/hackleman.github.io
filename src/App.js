@@ -11,9 +11,13 @@ function App() {
   return (
     <div>
         <LandingSection />
-        <ProjectSection />
-        <SkillSection />
-        <ContactSection />
+        <ProjectSection 
+          id = "projects"
+          />
+        <SkillSection 
+        id = "skills"/>
+        <ContactSection 
+        id = "contacts"/>
 
     </div>
   );

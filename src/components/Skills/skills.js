@@ -12,7 +12,7 @@ class Skills extends Component {
 
           {/* Languages */}
           <div className = "language-container">
-            <div className = "subheader-container1">
+            <div className = "subheader-container">
                 <div className = "header">Languages:</div>
             </div>
             <div className = "language-buttons">
@@ -34,7 +34,7 @@ class Skills extends Component {
 
           {/* Frameworks */}
           <div className = "framework-container">
-            <div className = "subheader-container2">
+            <div className = "subheader-container">
                 <div className = "header">Frameworks:</div>
             </div>
             <div className = "framework-buttons">
@@ -49,7 +49,7 @@ class Skills extends Component {
 
           {/* Technologies */}
           <div className = "technology-container">
-            <div className = "subheader-container3">
+            <div className = "subheader-container">
                 <div className = "header">Technologies:</div>
             </div>
             <div className = "technology-buttons">

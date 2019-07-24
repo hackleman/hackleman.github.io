@@ -1,28 +1,21 @@
 .skills {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 100vh;
+    // height: 80vh;
+    padding-bottom: 10vh;
     background-color: #F4F4F4;
-    // display: grid;
-    // grid-gap: 1rem;
-    // grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    // grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
-    // align-items: center;
-
     .header-container {
         height: 20vh;
-        padding-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin-left: 5vw;
         .header {
-            display: flex;
-            justify-content: flex-start;
             color: #1F2021;
             font-weight: 600;
             font-family: 'Lato', sans-serif;
             font-size: 160px;
         }
     }
+    // Buttons
     #landing-button {
         height: 75px;
         width: 160px;
@@ -31,7 +24,7 @@
         font-weight: 400;
         font-size: 30px;
         border-radius: 50px;
-        box-shadow: -5px 5px 2px 1px;
+        box-shadow: -3px 3px 2px 1px;
         padding: 0;
         transition: .3s;
     }
@@ -61,12 +54,13 @@
 
     // Languages
     .language-container {
-        height:25vh;
-        
         display: flex;
         flex-direction: column;
-        margin-left: 5vw;
-        .subheader-container1 {
+        .subheader-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 5vw;
             height: 10vh;
             .header {
                 color: #1F2021;
@@ -77,20 +71,23 @@
         }
         .language-buttons {
             width: 1024px;
+            margin-left: 5vw;
             display: grid;
             grid-gap: 1rem;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            align-items: center;
-            justify-items: center;
+            align-items: left;
+            justify-items: left;
         }
     }
     // Frameworks
     .framework-container {
-        margin-left: 5vw;
-        height:25vh;
         display: flex;
         flex-direction: column;
-        .subheader-container2 {
+        .subheader-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 5vw;
             height: 10vh;
             .header {
                 color: #1F2021;
@@ -100,9 +97,9 @@
             }
         }
         .framework-buttons {
-            width: 1024px;
+            width: 512px;
             display: grid;
-            margin-left: 3vw;
+            margin-left: 5vw;
             grid-gap: 1rem;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             align-items: left;
@@ -112,12 +109,15 @@
 
     // Technologies
     .technology-container {
-        margin-left: 5vw;
         height:25vh;
         display: flex;
         flex-direction: column;
-        .subheader-container3 {
-            height:10vh;
+        .subheader-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 5vw;
+            height: 10vh;
             .header {
                 color: #1F2021;
                 font-weight: 400;
@@ -129,81 +129,78 @@
             width: 1024px;
             display: grid;
             grid-gap: 1rem;
+            margin-left: 5vw;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            align-items: center;
-            justify-items: center;
+            align-items: left;
+            justify-items: left;
         }
     }
 }
 
 @media (max-width: 1024px) {
-    .language-container {
-        .language-buttons {
-            width: 80vw !important;
+    .skills {
+        .header-container{
+            height: 20vh;
+        }
+        .language-container {
+            .language-buttons {
+                width: 80vw !important;
+            }
+        }
+        // Frameworks
+        .framework-container {
+            .framework-buttons {
+                width: 40vw !important;
+            }
+        }
+        // Technologies
+        .technology-container {
+            .technology-buttons {
+                width: 80vw !important;
+            }
         }
     }
-    // Frameworks
-    .framework-container {
-        .framework-buttons {
-            width: 80vw !important;
-        }
-    }
-    // Technologies
-    .technology-container {
-        .technology-buttons {
-            width: 80vw !important;
-        }
-    }
+
 }
 @media (max-width: 768px) {
     .skills {
-        height: 110vh;
-        
         .header-container {
-
             height: 20vh;
-            .header {
-            }
         }
         .language-container {
-
-            margin-bottom: 5vh;
-            .subheader-container1 {
+            .subheader-container {
                 .header {
                     color: #1F2021;
                     font-weight: 400;
                     font-family: 'Lato', sans-serif;
-                    font-size: 80px;
+                    font-size: 60px;
                 }
             }
             .language-buttons {
-               
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             }
         }
         .framework-container {
-
-            .subheader-container2 {
+            .subheader-container {
                 .header {
                     color: #1F2021;
                     font-weight: 400;
                     font-family: 'Lato', sans-serif;
-                    font-size: 80px;
+                    font-size: 60px;
                 }
             }
             .framework-buttons {
-               
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                width: 80vw !important;
+                grid-template-columns: repeat(3, minmax(150px, 1fr));
                 align-items: left;
                 justify-items: left;
             }
         }
         .technology-container {
-
-            .subheader-container3 {
+            .subheader-container {
                 .header {
                     font-weight: 400;
-                    font-size: 80px;
+                    font-size: 60px;
                 }
             }
             .technology-buttons {
@@ -221,9 +218,6 @@
             font-size: 20px;
             padding: 0;
         }
-        #landing-button:hover {
-            box-shadow: 14px 14px 2px 2px #f4f4f4;
-        }
         #ilanding-button {
             height: 50px;
             width: 100px;
@@ -232,40 +226,16 @@
             padding: 0;
             transition: .3s;
         }
-        #ilanding-button:hover {
-            box-shadow: -5px 5px 2px 1px#1f2021;
-        }
         .header-container {
-            height: 15vh;
-            padding: 5vh 0;
+            height: 10vh;
         }
-        // Languages
-        .subheader-container1 {
+        // // Languages
+        .subheader-container {
             .header {
                 color: #1F2021;
-                font-weight: 600;
+                font-weight: 400 !important;
                 font-family: 'Lato', sans-serif;
-                font-size: 4rem !important;
-            }
-        }
-
-        // Frameworks
-        .subheader-container2 {
-            .header {
-                color: #1F2021;
-                font-weight: 400;
-                font-family: 'Lato', sans-serif;
-                font-size: 4rem !important;
-            }
-        }
-
-        // Technologies
-        .subheader-container3 {
-            .header {
-                color: #1F2021;
-                font-weight: 400;
-                font-family: 'Lato', sans-serif;
-                font-size: 4rem !important;
+                font-size: 3rem !important;
             }
         }
     }
@@ -274,40 +244,23 @@
 
 @media (max-width: 440px) {
     .skills {     
-        height: 120vh;   
         .header-container {
-            margin-bottom: 5vh;
+            height: 15vh;
             .header {
-                font-size: 85px;
-                
+                font-size: 105px;
             }
         }
         .language-container {
-            .subheader-container1 {
-                .header {
-                }
-            }
             .language-buttons {
                 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             }
         }
         .framework-container {
-            .subheader-container2 {
-                .header {
-                }
-            }
             .framework-buttons {
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-
+                grid-template-columns: repeat(3, minmax(100px, 1fr));
             }
         }
         .technology-container {
-            .subheader-container3 {
-                margin-bottom: 5vh;
-                
-                .header {
-                }
-            }
             .technology-buttons {
                 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             }
@@ -321,39 +274,26 @@
             width: 90px;
             font-weight: 400;
             font-size: 20px;
-            padding: 0;
-            box-shadow: -1px 2px 2px 1px;
+            box-shadow: -2px 2px 1px 1px;
+        }
+        .header-container {
+            height: 20vh;
         }
         .language-container {
-            .subheader-container1 {
-                .header {
-
-                }
-            }
             .language-buttons {
                 width: 100vw;
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
             }
         }
         .framework-container {
-            .subheader-container2 {
-                .header {
-                }
-            }
             .framework-buttons {
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-
+                grid-template-columns: repeat(3, minmax(80px, 1fr));
             }
         }
         .technology-container {
-            .subheader-container3 {
-                .header {
-                }
-            }
             .technology-buttons {
-                margin-left: 0vw;
                 width: 100vw;
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
             }
         }
     }
@@ -361,51 +301,56 @@
 
 @media (max-width: 340px) {
     .skills {
-        height: 135vh;
-        .header-container {
-            padding-top: 50px;
-            margin-bottom: 100px;
-            .header {
-                font-size: 100px;
-            }
+        #landing-button {
+            height: 50px;
+            width: 90px;
+            font-weight: 400;
+            font-size: 16px;
+            box-shadow: -2px 2px 1px 1px;
         }
-        // Languages
-        .subheader-container1 {
-            margin-bottom: 20px;
-            .header {
-                color: #1F2021;
-                font-weight: 400;
-                font-family: 'Lato', sans-serif;
-                font-size: 30px !important;
-            }
+        #ilanding-button{
+            font-size: 16px;
         }
 
-        // Frameworks
-        .framework-container {
-            .subheader-container2 {
+        .language-container {
+            .subheader-container {
                 .header {
-                    color: #1F2021;
-                    font-weight: 400;
-                    font-family: 'Lato', sans-serif;
-                    font-size: 30px !important;
+                    font-size: 40px !important;
+                }
+            }
+            .language-buttons {
+                width: 100vw;
+                grid-gap: 2rem;
+                grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+            }
+        }
+        .framework-container {
+            padding: 5vh 0;
+            .subheader-container {
+                .header {
+                    font-size: 40px !important;
                 }
             }
             .framework-buttons {
-                margin-left: 10vw;
+                grid-gap: 2rem;
+                grid-template-columns: repeat(3, minmax(70px, 1fr));
+            }
+        }
+        .technology-container {
+            .subheader-container {
+                padding: 2vh 0;
+                .header {
+                    font-size: 40px !important;
+                }
+            }
+            .technology-buttons {
+                width: 100vw;
+                grid-gap: 2rem;
+                grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
             }
         }
 
 
-        // Technologies
-        .subheader-container3 {
-            .header {
-                margin-bottom: 20px;
-                color: #1F2021;
-                font-weight: 400;
-                font-family: 'Lato', sans-serif;
-                font-size: 30px !important;
-            }
-        }
     }
 
 }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Icon } from 'semantic-ui-react'
+import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
+import toplogo from './top.svg';
 import './landing.scss';
 
 class Landing extends Component {
@@ -12,12 +14,17 @@ class Landing extends Component {
 
     this.handleScroll = this.handleScroll.bind(this);
   }
+
   componentDidMount(){
     window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
       window.removeEventListener('scroll', this.handleScroll);
+  }
+  
+  scrollToTop = () => {
+    scroll.scrollToTop();
   }
 
   handleScroll() {
@@ -43,27 +50,52 @@ class Landing extends Component {
           </div>
           <div className = "body-container">
               <div className = "body">
-                  <p>My name is Jason. </p>
+                <p>My name is Jason. </p>
                 <p>I'm a full-stack developer with a passion
                 for Machine Learning and Data Visualization.</p> 
                 <p>Scroll down to see some of my work.</p> 
               </div>
           </div>
-          <div className = {this.state.scrollingLock ? "scrolllock" : "button-container"}>
-
-              <div className = "resume-button">
-                <div id = "landing-button-1" >
-                <Icon loading name='asterisk' />Resumé.</div>
-                
+          <div className = {this.state.scrollingLock ? "button-container scrolllock" : "button-container"}>
+            <div className = "logo-container">
+              <img
+                  src={toplogo}
+                  
+                  className="top-logo"
+                  alt="Logo."
+                  onClick={this.scrollToTop}
+                />
+            </div>
+            <div className = "resume-button">
+              <div id = "landing-button" >
+                <Icon className = "button-icon" loading name='asterisk' />Resumé.
               </div>
-              <div className = "contact-button">
-                <div id = "landing-button-1" >
-                <Icon loading name='certificate' />Contact.</div>
-              </div>
+            </div>
+            <LinkScroll
+              activeClass="active"
+              to="contacts"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              >
+                <div className = "contact-button">
+                  <div id = "landing-button" >
+                  <Icon className = "button-icon" loading name='certificate' />Contact.</div>
+                </div>
+            </LinkScroll>
+            <LinkScroll
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={1000}
+              >
               <div className = "projects-button">
-                <div id = "landing-button-1" >
-                  <Icon loading name='spinner' />Projects.</div>
+                <div id = "landing-button" >
+                  <Icon className = "button-icon" loading name='spinner' />Projects.</div>
               </div>
+            </LinkScroll>
           </div>
       </div>
     );

@@ -4,16 +4,14 @@
     height: 100vh;
     background-color: #1F2021;
     display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
-    align-items: top;
-
+    
     .header-container {
         margin-left: 2rem;
         align-self: center;
+        display: flex;
+        justify-content: flex-start;  
         .header {
-            display: flex;
-            justify-content: flex-start;  
             color: #f4f4f4;
             font-family: 'Lato', sans-serif;
             font-weight: 500;
@@ -22,11 +20,9 @@
     }
     .body-container {
         margin-left: 3rem;
-        align-self: start;
             .body {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
             color: #f4f4f4;
             font-weight: 400;
             font-family: 'Lato', sans-serif;
@@ -44,18 +40,41 @@
         border-width: 0px;
         padding-top: 5vh;
         .resume-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
             height: 10vh;
+            width: 25vw;
         }
         .contact-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
             height: 10vh;
+            width: 25vw;
         }
         .projects-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
             height: 10vh;
+            width: 25vw;
         }
-        #landing-button-1 {
-            align-content: center;
+        .logo-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 25vw;
             height: 10vh;
-            width: 20vw;
+            img {
+                height: 40%;
+            }
+            :hover {
+                cursor: pointer;
+            }
+        }
+        #landing-button {
+            align-content: center;
             color: #f4f4f4;
             font-family: 'Lato', sans-serif;
             font-weight: 400;
@@ -63,92 +82,55 @@
             padding: 0;
             
         }
-        #landing-button-1:hover {
-            color: #1f2021;
-        }
-        #landing-button-1:focus {
-            color: #1f2021;
+        #landing-button:hover {
+            cursor: pointer;
+            color: #adadae;
         }
     }
     .scrolllock {
-        display: flex;
-        justify-content: space-evenly;
         position: fixed;
         width: 100vw;
         height: 13vh;
         background: #1f2021;
         padding-top: 5vh;
         top: 0vh;
-        z-index: 1000;
-        border-width: 0px;
-
-        .resume-button {
-            height: 10vh;
-        }
-        .contact-button {
-            height: 10vh;
-        }
-        .projects-button {
-            height: 10vh;
-        }
-        #landing-button-1 {
-            height: 10vh;
-            width: 20vw;
-            color: #f4f4f4;
-            font-family: 'Lato', sans-serif;
-            font-weight: 400;
-            font-size: 40px;
-            border-radius: 40px;
-            padding: 0;
-            
-        }
-        #landing-button-1:hover {
-            color: #e0e1e2;
-            cursor: pointer;
-        }
-        #landing-button-1:focus {
-            color: #1f2021;
-            cursor: pointer;
-        }
     }
-
-
-
 }
-
 
 @media (max-width: 1100px) {
     .landing {    
-        .header-container {
-            .header {
-                font-size: 200px;
-            }
+        .header {
+            font-size: 200px;
         }
-        .body-container {
-            .body {
-                font-size: 35px;
+        .body {
+            font-size: 35px;
+        }
+        .logo-container {
+            height: 10vh;
+            img {
+                height: 30% !important;
+            }
+            :hover {
+                cursor: pointer;
             }
         }
         .button-container {
-            #landing-button-1 {
-                font-size: 2.1rem;
+            #landing-button {
+                font-size: 2.5rem;
             }
         }
         .scrolllock {
-            #landing-button-1 {
-                font-size: 2.1rem;
+            #landing-button {
+                font-size: 2.5rem;
             }
         }
     }
-
 }
 
 @media (max-width: 768px) {
     .landing {    
-        .header-container {
-            .header {
-                font-size: 165px;
-            }
+        .header {
+            font-size: 165px !important;
         }
         .body-container {
             width: 90vw;
@@ -157,20 +139,18 @@
             }
         }
         .button-container {
-
-            #landing-button-1 {
+            #landing-button {
+                font-size: 2rem;
             }
-        }
-        .scrolllock {
-
-            #landing-button-1 {
-
-
+            .logo-container {
+                width: 10vw !important;
             }
         }
 
+        .button-icon {
+            display: none !important;
+        }
     }
-
 }
 
 @media (max-width: 440px) {
@@ -178,42 +158,17 @@
         .header-container {
             margin-left: 2.5rem;
             .header {
-                font-size: 120px;
+                font-size: 100px !important;
             }
         }
         .body-container {
             .body {
-                font-size: 20px;
+                width: 90%;
+                font-size: 18px;
             }
         }
-        .button-container {
-            padding-left: 5vw;
-            margin-top: 0px;
-            width: 100vw;
-            #landing-button-1 {
-                height: 50px;
-                width: 30vw;
-                color: #f4f4f4;
-                font-weight: 400;
-                font-size: 20px;
-                border: none !important;
-                border-radius: 15px;
-            }
-        }
-        .scrolllock {
-            padding-left: 5vw;
-            margin-top: 0px;
-            width: 100vw;
-            #landing-button-1 {
-                height: 50px;
-                width: 30vw;
-                color: #f4f4f4;
-                font-weight: 400;
-                font-size: 20px;
-                border: none !important;
-                border-radius: 15px;
-            }
-            
+        #landing-button{
+            font-size: 1.5rem !important;
         }
     }
 }
@@ -230,32 +185,8 @@
         .body-container {
             margin-left: 5vh;
             .body {
-                
-                font-size: 18px;
+                font-size: 16px;
             }
         }
-        .button-container {
-            #landing-button-1 {
-                height: 45px;
-                width: 30vw;
-                color: #f4f4f4;
-                font-weight: 400;
-                font-size: 15px;
-                border: none !important;
-                border-radius: 15px;
-            }
-        }
-        .scrolllock {
-            #landing-button-1 {
-                height: 45px;
-                width: 30vw;
-                color: #f4f4f4;
-                font-weight: 400;
-                font-size: 15px;
-                border: none !important;
-                border-radius: 15px;
-            }
-        }
-
     }
 }
