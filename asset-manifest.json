@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd7f462d.chunk.css",
+    "main.css": "/static/css/main.36b5834a.chunk.css",
     "main.js": "/static/js/main.c429e44d.chunk.js",
     "main.js.map": "/static/js/main.c429e44d.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -8,9 +8,9 @@
     "static/js/2.e7faf4ab.chunk.js": "/static/js/2.e7faf4ab.chunk.js",
     "static/js/2.e7faf4ab.chunk.js.map": "/static/js/2.e7faf4ab.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d963b170dae51923950e4092bf526bd2.js": "/precache-manifest.d963b170dae51923950e4092bf526bd2.js",
+    "precache-manifest.9e66331bdb258575eac5ecd2f68be105.js": "/precache-manifest.9e66331bdb258575eac5ecd2f68be105.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.bd7f462d.chunk.css.map": "/static/css/main.bd7f462d.chunk.css.map",
+    "static/css/main.36b5834a.chunk.css.map": "/static/css/main.36b5834a.chunk.css.map",
     "static/media/break-01.svg": "/static/media/break-01.10f6864a.svg",
     "static/media/icon-01.svg": "/static/media/icon-01.354862b7.svg",
     "static/media/python.svg": "/static/media/python.62a7aae3.svg",
