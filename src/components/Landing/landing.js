@@ -68,7 +68,11 @@ class Landing extends Component {
             </div>
             <div className = "resume-button">
               <div id = "landing-button" >
-                <Icon className = "button-icon" loading name='asterisk' />Resumé.
+                <div class = "button-content">
+                  Resumé.
+                  {/* <Icon className = "button-icon" loading name='certificate' /> */}
+                </div>
+                {/* <Icon className = "button-icon" loading name='asterisk' /> */}
               </div>
             </div>
             <LinkScroll
@@ -80,7 +84,11 @@ class Landing extends Component {
               >
                 <div className = "contact-button">
                   <div id = "landing-button" >
-                  <Icon className = "button-icon" loading name='certificate' />Contact.</div>
+                    <div class = "button-content">
+                      Contact.
+                    {/* <Icon className = "button-icon" loading name='certificate' /> */}
+                    </div>
+                  </div>
                 </div>
             </LinkScroll>
             <LinkScroll
@@ -92,8 +100,15 @@ class Landing extends Component {
                 duration={1000}
               >
               <div className = "projects-button">
-                <div id = "landing-button" >
-                  <Icon className = "button-icon" loading name='spinner' />Projects.</div>
+
+                  <div id = "landing-button" >
+                    <div class = "button-content">
+                      Projects.
+                    {/* <Icon className = "button-icon" loading name='certificate' /> */}
+                    </div>
+                  </div>
+                  {/* Projects.
+                  // <Icon className = "button-icon" loading name='spinner' /> */}
               </div>
             </LinkScroll>
           </div>

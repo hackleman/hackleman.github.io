@@ -67,6 +67,7 @@
             width: 25vw;
             height: 10vh;
             img {
+                margin-top: 1rem;
                 height: 40%;
             }
             :hover {
@@ -74,26 +75,42 @@
             }
         }
         #landing-button {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .button-content {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            height: 65%;
             align-content: center;
             color: #f4f4f4;
             font-family: 'Lato', sans-serif;
             font-weight: 400;
             font-size: 40px;
             padding: 0;
+            border-radius: 2rem;
+            border-color: #f4f4f4;
+            transition: .5s;
             
         }
         #landing-button:hover {
             cursor: pointer;
-            color: #adadae;
+            color: #1f2021;
+            background: #f4f4f4;
         }
     }
     .scrolllock {
         position: fixed;
         width: 100vw;
-        height: 13vh;
         background: #1f2021;
-        padding-top: 5vh;
+        padding-top: 0vh 0;
         top: 0vh;
+        #landing-button {
+            border: 2px solid #f4f4f4;
+        }
     }
 }
 
@@ -146,7 +163,6 @@
                 width: 10vw !important;
             }
         }
-
         .button-icon {
             display: none !important;
         }
@@ -154,7 +170,8 @@
 }
 
 @media (max-width: 440px) {
-    .landing { 
+    .landing {
+        height: 90vh;
         .header-container {
             margin-left: 2.5rem;
             .header {
@@ -167,8 +184,37 @@
                 font-size: 18px;
             }
         }
-        #landing-button{
-            font-size: 1.5rem !important;
+        .button-container {
+            width: 100vw;
+            top: 75vh;
+            #landing-button {
+                width: 80%;
+                .button-content {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+                height: 65%;
+                align-content: center;
+                color: #f4f4f4;
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                font-size: 1.2rem;
+                padding: 0;
+                border-radius: 2rem;
+                border-color: #f4f4f4;
+                transition: .5s;
+            }
+        }
+        .scrolllock {
+            position: fixed;
+            width: 100vw;
+            background: #1f2021;
+            padding-top: 0vh 0;
+            top: 0vh;
+            #landing-button {
+                border: 2px solid #f4f4f4;
+            }
         }
     }
 }
@@ -188,5 +234,15 @@
                 font-size: 16px;
             }
         }
+        .button-container{
+ 
+            #landing-button{
+                font-size: 1rem !important;
+                border-radius: 1rem;
+            }
+
+        }
+
+        
     }
 }
