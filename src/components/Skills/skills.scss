@@ -280,19 +280,23 @@
             height: 20vh;
         }
         .language-container {
+            padding: 1rem 0;
             .language-buttons {
                 width: 100vw;
                 grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
             }
         }
         .framework-container {
+            padding: 1rem 0;
             .framework-buttons {
                 grid-template-columns: repeat(3, minmax(80px, 1fr));
             }
         }
         .technology-container {
+            padding: 1rem 0;
             .technology-buttons {
                 width: 100vw;
+                padding: 2rem 0;
                 grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
             }
         }
@@ -325,7 +329,6 @@
             }
         }
         .framework-container {
-            padding: 5vh 0;
             .subheader-container {
                 .header {
                     font-size: 40px !important;
@@ -338,7 +341,6 @@
         }
         .technology-container {
             .subheader-container {
-                padding: 2vh 0;
                 .header {
                     font-size: 40px !important;
                 }
