@@ -53,6 +53,7 @@
             height: 10vh;
         }
         #landing-button-1 {
+            align-content: center;
             height: 10vh;
             width: 20vw;
             color: #f4f4f4;
@@ -74,7 +75,7 @@
         justify-content: space-evenly;
         position: fixed;
         width: 100vw;
-        height: 10vh;
+        height: 13vh;
         background: #1f2021;
         padding-top: 5vh;
         top: 0vh;
@@ -116,7 +117,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
     .landing {    
         .header-container {
             .header {
@@ -130,25 +131,19 @@
         }
         .button-container {
             #landing-button-1 {
-                height: 100px;
-                width: 250px;
-                color: #f4f4f4;
-                font-weight: 400;
-                font-size: 50px;
-            }
-            #landing-button-1:hover {
-                color: #1f2021;
-            }
-            #landing-button-1:focus {
-                color: #1f2021;
+                font-size: 2.1rem;
             }
         }
-
+        .scrolllock {
+            #landing-button-1 {
+                font-size: 2.1rem;
+            }
+        }
     }
+
 }
 
 @media (max-width: 768px) {
-
     .landing {    
         .header-container {
             .header {
@@ -162,21 +157,15 @@
             }
         }
         .button-container {
-            flex-direction: row;
-            justify-content: space-evenly;
+
             #landing-button-1 {
-                height: 75px;
-                width: 150px;
-                border-radius: 20px;
-                color: #f4f4f4;
-                font-weight: 400;
-                font-size: 35px;
             }
-            #landing-button-1:hover {
-                color: #1f2021;
-            }
-            #landing-button-1:focus {
-                color: #1f2021;
+        }
+        .scrolllock {
+
+            #landing-button-1 {
+
+
             }
         }
 
@@ -185,44 +174,47 @@
 }
 
 @media (max-width: 440px) {
-    .landing {    
+    .landing { 
         .header-container {
             margin-left: 2.5rem;
             .header {
                 font-size: 120px;
-                
             }
         }
         .body-container {
-            width: 80vw;
             .body {
-                font-size: 25px;
+                font-size: 20px;
             }
         }
         .button-container {
-            margin-top: 75px;
-            margin-left: 5vw;
-            width: 90vw;
-            flex-direction: row;
-            
-            justify-content: space-evenly;
+            padding-left: 5vw;
+            margin-top: 0px;
+            width: 100vw;
             #landing-button-1 {
                 height: 50px;
-                width: 100px;
+                width: 30vw;
                 color: #f4f4f4;
                 font-weight: 400;
-                font-size: 22px;
+                font-size: 20px;
                 border: none !important;
                 border-radius: 15px;
             }
-            #landing-button-1:hover {
-                color: #1f2021;
-            }
-            #landing-button-1:focus {
-                color: #1f2021;
-            }
         }
-
+        .scrolllock {
+            padding-left: 5vw;
+            margin-top: 0px;
+            width: 100vw;
+            #landing-button-1 {
+                height: 50px;
+                width: 30vw;
+                color: #f4f4f4;
+                font-weight: 400;
+                font-size: 20px;
+                border: none !important;
+                border-radius: 15px;
+            }
+            
+        }
     }
 }
 
@@ -239,29 +231,29 @@
             margin-left: 5vh;
             .body {
                 
-                font-size: 20px;
+                font-size: 18px;
             }
         }
         .button-container {
-            margin-top: 20px;
-            margin-left: 0vh;
-            flex-direction: row;
-            justify-content: space-evenly;
-            width: 100vw;
             #landing-button-1 {
                 height: 45px;
-                width: 90px;
+                width: 30vw;
                 color: #f4f4f4;
                 font-weight: 400;
-                font-size: 20px;
+                font-size: 15px;
                 border: none !important;
                 border-radius: 15px;
             }
-            #landing-button-1:hover {
-                color: #1f2021;
-            }
-            #landing-button-1:focus {
-                color: #1f2021;
+        }
+        .scrolllock {
+            #landing-button-1 {
+                height: 45px;
+                width: 30vw;
+                color: #f4f4f4;
+                font-weight: 400;
+                font-size: 15px;
+                border: none !important;
+                border-radius: 15px;
             }
         }
 

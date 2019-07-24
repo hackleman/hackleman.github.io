@@ -143,14 +143,40 @@
         }
     }
 }
-
+@media (max-width: 400px) {
+    .projects{
+        .header-container{
+            margin-left: 3vw;
+        }
+        .card-container {
+            margin-left: -3vh;
+            .card1 {
+                width: 75vw;
+                font-size: 32 !important;
+            }
+            .line-break {
+                display: flex;
+                width: 65vw;
+            }
+            .card2 {
+                width: 75vw;
+            }
+            .line-break2 {
+                display: flex;
+                width: 65vw;
+            }
+            .card3 {
+                width: 75vw;
+            }
+        }
+    }
+}
 @media (max-width: 375px) {
     .projects{
         .header-container {
             margin-bottom: 0vh;
             .header {
-                font-size: 65px;
-                
+                font-size: 60px;
             }
         }
         .card-container {

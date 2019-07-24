@@ -17,6 +17,7 @@ class ProjectCard extends Component {
 
       render() {
           return (
+            <a href = "http://icky-class.surge.sh">
             <Card fluid>
                 <Image 
                     src={this.props.image} 
@@ -31,6 +32,8 @@ class ProjectCard extends Component {
                     </Card.Meta>
                 </Card.Content>
             </Card>
+            </a>
+           
           )
       }
 }
