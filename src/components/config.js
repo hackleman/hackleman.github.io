@@ -15,6 +15,12 @@ module.exports = {
         title: 'Python Tkinter PostgreSQL Developer',
         tech: 'Python, ttk, PostgreSQL',
         description: 'A GUI Application to interface with a local PostgreSQL database, built entirely with native Python libraries',
-
+    },
+    skills: {
+        languages : [['1', 'Javascript'], ['2', 'Python'], ['3', 'SQL'], ['4', 'C/C#']],
+        frameworks : [['4', 'Angular'], ['5', 'React'], ['10', 'Express']],
+        tech : [['6', 'Oracle'], ['8', 'MongoDB'], ['9', 'Node.JS'], ['11', 'PostgreSQL']]
     }
+    
+    
 };

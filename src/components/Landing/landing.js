@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Icon } from 'semantic-ui-react'
 import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
 import toplogo from './top.svg';
 import './landing.scss';
@@ -13,8 +12,12 @@ class Landing extends Component {
     };
 
     this.handleScroll = this.handleScroll.bind(this);
+    this.myRef = React.createRef();
   }
 
+  scroll(ref) {
+    ref.current.scrollIntoView({behavior: 'smooth'})
+  }
   componentDidMount(){
     window.addEventListener('scroll', this.handleScroll);
   }
@@ -30,12 +33,10 @@ class Landing extends Component {
   handleScroll() {
 
     if (window.scrollY > window.innerHeight * .85) {
-      console.log("should lock");
       this.setState({
         scrollingLock: true
       });
     } else if (window.scrollY < window.innerHeight * .85) {
-      console.log("not locked" );
       this.setState({
         scrollingLock: false
       });
@@ -68,11 +69,10 @@ class Landing extends Component {
             </div>
             <div className = "resume-button">
               <div id = "landing-button" >
-                <div class = "button-content">
+                <div className = "button-content">
                   Resumé.
-                  {/* <Icon className = "button-icon" loading name='certificate' /> */}
                 </div>
-                {/* <Icon className = "button-icon" loading name='asterisk' /> */}
+
               </div>
             </div>
             <LinkScroll
@@ -84,9 +84,8 @@ class Landing extends Component {
               >
                 <div className = "contact-button">
                   <div id = "landing-button" >
-                    <div class = "button-content">
+                    <div className = "button-content">
                       Contact.
-                    {/* <Icon className = "button-icon" loading name='certificate' /> */}
                     </div>
                   </div>
                 </div>
@@ -100,15 +99,12 @@ class Landing extends Component {
                 duration={1000}
               >
               <div className = "projects-button">
-
                   <div id = "landing-button" >
-                    <div class = "button-content">
+                    <div className = "button-content">
                       Projects.
-                    {/* <Icon className = "button-icon" loading name='certificate' /> */}
                     </div>
                   </div>
-                  {/* Projects.
-                  // <Icon className = "button-icon" loading name='spinner' /> */}
+
               </div>
             </LinkScroll>
           </div>

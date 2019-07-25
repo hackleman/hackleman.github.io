@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from './components/NavBar/navbar.js';
 import LandingSection from './components/Landing/landing.js';
 import ProjectSection from './components/Projects/projects.js';
 import ContactSection from './components/Contacts/contacts.js';
@@ -10,14 +9,17 @@ import './App.scss';
 function App() {
   return (
     <div>
-        <LandingSection />
+        <LandingSection 
+        />
         <ProjectSection 
           id = "projects"
-          />
+        />
         <SkillSection 
-        id = "skills"/>
+          id = "skills"
+        />
         <ContactSection 
-        id = "contacts"/>
+          id = "contacts"
+        />
 
     </div>
   );

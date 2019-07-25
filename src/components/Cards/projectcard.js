@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, Icon, Image } from 'semantic-ui-react'
+import { Card, Image } from 'semantic-ui-react'
 import config from '../config.js';
 
 
@@ -12,7 +12,7 @@ class ProjectCard extends Component {
         }
       }
       componentDidMount() {
-
+     
       }
 
       render() {
