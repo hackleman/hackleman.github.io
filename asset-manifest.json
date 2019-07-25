@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.12100452.chunk.css",
-    "main.js": "/static/js/main.cf987d11.chunk.js",
-    "main.js.map": "/static/js/main.cf987d11.chunk.js.map",
+    "main.js": "/static/js/main.c8b29c5a.chunk.js",
+    "main.js.map": "/static/js/main.c8b29c5a.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/js/2.4f307144.chunk.js": "/static/js/2.4f307144.chunk.js",
     "static/js/2.4f307144.chunk.js.map": "/static/js/2.4f307144.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d7bb2eea1d854736dd807d04a8837bd8.js": "/precache-manifest.d7bb2eea1d854736dd807d04a8837bd8.js",
+    "precache-manifest.db90c892d4cc7534fd7331322304e67a.js": "/precache-manifest.db90c892d4cc7534fd7331322304e67a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.12100452.chunk.css.map": "/static/css/main.12100452.chunk.css.map",
     "static/media/break-01.svg": "/static/media/break-01.10f6864a.svg",
     "static/media/python.svg": "/static/media/python.62a7aae3.svg",
-    "static/media/taxiinsights-01.svg": "/static/media/taxiinsights-01.b706bff3.svg",
+    "static/media/taxiinsights-01.jpg": "/static/media/taxiinsights-01.d54450e0.jpg",
     "static/media/top.svg": "/static/media/top.b71d9e36.svg",
     "static/media/ultimate.svg": "/static/media/ultimate.af099200.svg"
   }
