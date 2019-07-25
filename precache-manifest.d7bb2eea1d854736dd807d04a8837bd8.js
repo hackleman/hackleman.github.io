@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0cb753e159f189ee76eab8b116109748",
+    "revision": "443ac7fb82e608f77039ca5dc0f99d90",
     "url": "/index.html"
   },
   {
-    "revision": "01cac98f9076e4b809f0",
-    "url": "/static/css/main.36b5834a.chunk.css"
+    "revision": "915a756175e7f173fef5",
+    "url": "/static/css/main.12100452.chunk.css"
   },
   {
-    "revision": "19738f206d0ad5136887",
-    "url": "/static/js/2.e7faf4ab.chunk.js"
+    "revision": "1b85ba60578b15326979",
+    "url": "/static/js/2.4f307144.chunk.js"
   },
   {
-    "revision": "01cac98f9076e4b809f0",
-    "url": "/static/js/main.c429e44d.chunk.js"
+    "revision": "915a756175e7f173fef5",
+    "url": "/static/js/main.cf987d11.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -24,16 +24,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/break-01.10f6864a.svg"
   },
   {
-    "revision": "354862b7fca0d12507f211180deba32b",
-    "url": "/static/media/icon-01.354862b7.svg"
-  },
-  {
     "revision": "62a7aae35cdd140489fc5a078eeecfe8",
     "url": "/static/media/python.62a7aae3.svg"
   },
   {
-    "revision": "c85a66fbb78b6e00c795e8571ea22d3b",
-    "url": "/static/media/taxiinsights-01.c85a66fb.svg"
+    "revision": "b706bff39178182f64d00477e4318316",
+    "url": "/static/media/taxiinsights-01.b706bff3.svg"
   },
   {
     "revision": "b71d9e363b6a6307520a3f95af12e47a",
