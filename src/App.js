@@ -1,23 +1,30 @@
 import React from 'react';
-import LandingSection from './components/Landing/landing.js';
-import ProjectSection from './components/Projects/projects.js';
-import ContactSection from './components/Contacts/contacts.js';
-import SkillSection from './components/Skills/skills.js';
+import Landing from './components/Landing/landing.js';
+import ParticleContainer from './components/Landing/particles.js';
+import Corner from './components/Landing/corner.js';
+import About from './components/About/about.js';
+import Projects from './components/Projects/projects.js';
+import Contacts from './components/Contacts/contacts.js';
+import Skills from './components/Skills/skills.js';
 
 import './App.scss';
 
 function App() {
   return (
     <div>
-        <LandingSection 
+        <ParticleContainer />
+        <Corner />
+        <Landing
         />
-        <ProjectSection 
-          id = "projects"
-        />
-        <SkillSection 
+        <About 
           id = "skills"
         />
-        <ContactSection 
+        <Projects
+          id = "projects"
+        />
+        <Skills
+        />
+        <Contacts
           id = "contacts"
         />
 

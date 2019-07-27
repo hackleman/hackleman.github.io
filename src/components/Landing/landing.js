@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
-import toplogo from './top.svg';
+import linebreak from '../../assets/break-02.svg';
+import { Button } from 'semantic-ui-react';
+import toplogo from '../../assets/top.svg';
 import './landing.scss';
 
 class Landing extends Component {
@@ -12,12 +14,8 @@ class Landing extends Component {
     };
 
     this.handleScroll = this.handleScroll.bind(this);
-    this.myRef = React.createRef();
   }
 
-  scroll(ref) {
-    ref.current.scrollIntoView({behavior: 'smooth'})
-  }
   componentDidMount(){
     window.addEventListener('scroll', this.handleScroll);
   }
@@ -31,7 +29,6 @@ class Landing extends Component {
   }
 
   handleScroll() {
-
     if (window.scrollY > window.innerHeight * .85) {
       this.setState({
         scrollingLock: true
@@ -45,50 +42,45 @@ class Landing extends Component {
 
   render() {
     return (
-      <div className = "landing">
-          <div className = "header-container">
-              <div className = "header">Hello.</div>
-          </div>
-          <div className = "body-container">
-              <div className = "body">
-                <p>My name is Jason. </p>
-                <p>I'm a full-stack developer with a passion
-                for Machine Learning and Data Visualization.</p> 
-                <p>Scroll down to see some of my work.</p> 
+        <div className = "landing">
+            <div className = "header">
+              <div className = "header-container">
+                <div className = "header1">Jason Hackleman</div>
+                <img 
+                  src = {linebreak}
+                  alt = ''
+                  className = "line-break" 
+                />
+                <div className = "header2">Full-Stack Developer</div>
               </div>
-          </div>
+              <div className = "header-buttons">
+                <Button className = "header-button" content = "Resume" />
+              </div>
+            </div>
           <div className = {this.state.scrollingLock ? "button-container scrolllock" : "button-container"}>
             <div className = "logo-container">
               <img
                   src={toplogo}
-                  
                   className="top-logo"
                   alt="Logo."
                   onClick={this.scrollToTop}
                 />
             </div>
-            <div className = "resume-button">
-              <div id = "landing-button" >
-                <div className = "button-content">
-                  Resumé.
-                </div>
-
-              </div>
-            </div>
             <LinkScroll
               activeClass="active"
-              to="contacts"
+              to="about"
               spy={true}
               smooth={true}
+              offset={-300}
               duration={1000}
               >
-                <div className = "contact-button">
-                  <div id = "landing-button" >
-                    <div className = "button-content">
-                      Contact.
-                    </div>
+              <div className = "resume-button">
+                <div id = "landing-button" >
+                  <div className = "button-content">
+                    About.
                   </div>
                 </div>
+              </div>
             </LinkScroll>
             <LinkScroll
                 activeClass="active"
@@ -107,8 +99,24 @@ class Landing extends Component {
 
               </div>
             </LinkScroll>
+            <LinkScroll
+              activeClass="active"
+              to="contacts"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              >
+                <div className = "contact-button">
+                  <div id = "landing-button" >
+                    <div className = "button-content">
+                      Contact.
+                    </div>
+                  </div>
+                </div>
+            </LinkScroll>
           </div>
       </div>
+
     );
 }
 }

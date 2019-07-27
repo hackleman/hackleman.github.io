@@ -1,0 +1,56 @@
+.corner-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15vw;
+    height: 10vh;
+    z-index: 8675309;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .link-container {
+        margin: 2rem 0;
+        .githublogo {
+            margin: auto;
+            height: 5vw;
+        }
+        .githublogo:hover {
+            cursor: pointer;
+        }
+        .linkedinlogo {
+            margin: auto;
+            height: 5vw;
+        }
+        .linkedinlogo:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .corner-container {
+        width: 25vw;
+        height: 10vh;
+        z-index: 8675309;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .link-container {
+            margin: 2rem 0;
+            .githublogo {
+                margin: auto;
+                height: 8vw;
+            }
+            .githublogo:hover {
+                cursor: pointer;
+            }
+            .linkedinlogo {
+                margin: auto;
+                height: 8vw;
+            }
+            .linkedinlogo:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

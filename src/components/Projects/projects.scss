@@ -20,23 +20,6 @@
             font-size: 160px;
         }
     }
-    .example-enter {
-        opacity: 0.01;
-    }
-    
-    .example-enter.example-enter-active {
-        opacity: 1;
-        transition: opacity 500ms ease-in;
-    }
-    
-    .example-exit {
-        opacity: 1;
-    }
-    
-    .example-exit.example-exit-active {
-        opacity: 0.01;
-        transition: opacity 300ms ease-in;
-    }
     .card-container {
         display: grid;
         grid-gap: 1rem;
