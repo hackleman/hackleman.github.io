@@ -1,7 +1,7 @@
 .corner-container {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     width: 15vw;
     height: 10vh;
     z-index: 8675309;
@@ -12,21 +12,32 @@
         margin: 2rem 0;
         .githublogo {
             margin: auto;
-            height: 5vw;
+            height: 4rem;
         }
         .githublogo:hover {
             cursor: pointer;
         }
         .linkedinlogo {
             margin: auto;
-            height: 5vw;
+            height: 4rem;
         }
         .linkedinlogo:hover {
             cursor: pointer;
         }
     }
 }
-
+@media (max-width: 768px) {
+    .corner-container {
+        .link-container {
+            .githublogo {
+                height: 3rem;
+            }
+            .linkedinlogo {
+                height: 3rem;
+            }
+        }
+    }
+}
 @media (max-width: 575px) {
     .corner-container {
         width: 25vw;

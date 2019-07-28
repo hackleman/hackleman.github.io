@@ -27,6 +27,9 @@ class Landing extends Component {
   scrollToTop = () => {
     scroll.scrollToTop();
   }
+  scrollToBottom = () => {
+    scroll.scrollToBottom();
+  }
 
   handleScroll() {
     if (window.scrollY > window.innerHeight * .85) {
@@ -99,21 +102,14 @@ class Landing extends Component {
 
               </div>
             </LinkScroll>
-            <LinkScroll
-              activeClass="active"
-              to="contacts"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              >
-                <div className = "contact-button">
-                  <div id = "landing-button" >
-                    <div className = "button-content">
-                      Contact.
-                    </div>
-                  </div>
+            <div className = "contact-button" onClick={this.scrollToBottom}>
+              <div id = "landing-button" >
+                <div className = "button-content">
+                  Contact.
                 </div>
-            </LinkScroll>
+              </div>
+            </div>
+
           </div>
       </div>
 
