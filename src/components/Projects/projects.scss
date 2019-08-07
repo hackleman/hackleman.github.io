@@ -1,78 +1,62 @@
 .projects {
-    position: relative;
-    top: 0vh;
-    width: 100%;
-    padding-bottom:10vh;
-    background-color: #F4F4F4;
-
+    background-color: #1f2021;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
 
     .header-container {
-        height: 25vh;
+        background: #1f2021;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 3rem;
-        margin-bottom: 5rem;
-        .header {
-            color: #1F2021;
-            font-weight: 600;
-            font-family: 'Lato', sans-serif;
-            font-size: 160px;
-        }
-    }
-    .card-container {
-        display: grid;
-        grid-gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
         align-items: center;
-        justify-items: center;
-
-        .card1 {
-            width: 30vw;
-            color: #1F2021;
-            font-family: 'Lato', sans-serif;
-            line-height: 1.5rem;
-            transition: .3s;
-        }
-        .line-break {
-            display: none;
-        }
-        .card2 {
-            width: 30vw;
-            color: #1F2021;
-            font-family: 'Lato', sans-serif;
-            line-height: 1.5rem;
-            transition: .3s;
-    
-            font-size: 10px;
-        }
-        .line-break2 {
-            display: none;
-        }
-        .card3 {
-            width: 30vw;
-            color: #1F2021;
-            font-family: 'Lato', sans-serif;
-            line-height: 1.5rem;
-            transition: .3s;
-        }
-        .card1:hover {
-            box-shadow: -8px 22px 12px 2px;
-            border-radius: 30px;
-            cursor: pointer;
-        }
-        .card2:hover {
-            box-shadow: -8px 22px 18px 2px;
-            border-radius: 30px;
-            cursor: pointer;
-        }
-        .card3:hover {
-            box-shadow: -8px 22px 9px 2px;
-            border-radius: 30px;
-            cursor: pointer;
-        }
-
+        color: #f4f4f4;
+        font-weight: 600;
+        font-size: 160px;
+        height: 30vh;
     }
+    .card-container-sidebar {
+        overflow: hidden;
+        .card-container {
+            padding: 2rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 2rem;
+            margin: calc(1rem / 2 * -1);
+
+            .card-image {
+                flex-basis: 20rem;
+                flex-grow: 1;
+                height: 20vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: calc(1rem / 2);
+                img {
+                    border-radius: 1rem;
+                    height: 100%;
+                }
+            }
+    
+            .card-description {
+                font-size: 2rem;
+                border: 2px solid #f4f4f4;
+                border-radius: 2rem;
+                color: #f4f4f4;
+                font-weight: 400;
+                line-height: 3rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 2rem;
+                margin: calc(1rem / 2);
+                display: flex;
+                flex-basis: 0;
+                flex-grow: 999;
+                min-width: 50%;
+            }
+        }
+    }
+
 }
 
 

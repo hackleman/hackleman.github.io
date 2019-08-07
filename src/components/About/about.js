@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ParticleContainer from './particles';
+import ParticleContainer from './Particles';
 import './about.scss';
 
 class About extends Component {
@@ -9,7 +9,7 @@ class About extends Component {
         <ParticleContainer />
         <div className = "about-container">
             <div className = "header-container">
-              <div className = "header">About.</div>
+              About.
             </div>
             <div className = "body-container">
               <div className = "body">

@@ -1,22 +1,17 @@
 .contacts {
-    position: relative;
-    top: 0vh;
-    width: 100%;
+    font-family: 'Lato', sans-serif;
     background-color: #1f2021;
-    display: grid;
-    grid-template-rows: repeat(2, minmax(120px, 1fr));
+    // display: grid;
+    // grid-template-rows: repeat(2, minmax(120px, 1fr));
     align-items: center;
     .header-container {
-        margin-top: 0;
-        margin-left: 5vw;
-        .header {
-            display: flex;
-            justify-content: flex-start;
-            color: #f4f4f4;
-            font-weight: 600;
-            font-family: 'Lato', sans-serif;
-            font-size: 160px;
-        }
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #f4f4f4;
+        font-weight: 600;
+        font-size: 160px;
     }
     .body-container {
         display: flex;

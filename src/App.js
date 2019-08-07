@@ -1,11 +1,11 @@
 import React from 'react';
-import Landing from './components/Landing/landing.js';
-import ParticleContainer from './components/Landing/particles.js';
-import Corner from './components/Landing/corner.js';
-import About from './components/About/about.js';
-import Projects from './components/Projects/projects.js';
-import Contacts from './components/Contacts/contacts.js';
-import Skills from './components/Skills/skills.js';
+import Landing from './components/Landing/Landing.js';
+import ParticleContainer from './components/Landing/Particles.js';
+import Corner from './components/Landing/Corner.js';
+import About from './components/About/About.js';
+import Projects from './components/Projects/Projects.js';
+import Contacts from './components/Contacts/Contacts.js';
+import Skills from './components/Skills/Skills.js';
 
 import './App.scss';
 

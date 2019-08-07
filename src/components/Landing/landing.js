@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
 import linebreak from '../../assets/break-02.svg';
-import { Button } from 'semantic-ui-react';
 import toplogo from '../../assets/top.svg';
 import './landing.scss';
 
@@ -56,9 +55,15 @@ class Landing extends Component {
                 />
                 <div className = "header2">Full-Stack Developer</div>
               </div>
-              <div className = "header-buttons">
-                <Button className = "header-button" content = "Resume" />
+              <div className = "header-button">
+              <a href = 'https://hackleman.s3.amazonaws.com/JasonHacklemanResume.pdf'>
+              
+
+                Resume.
+              
+              </a>
               </div>
+
             </div>
           <div className = {this.state.scrollingLock ? "button-container scrolllock" : "button-container"}>
             <div className = "logo-container">

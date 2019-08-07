@@ -5,6 +5,7 @@ import project2img from '../../assets/ultimate.svg';
 import project3img from '../../assets/python.svg';
 import linebreak from '../../assets/break-01.svg';
 import Fade from 'react-reveal/Fade';
+import Project from './Project';
 import './projects.scss';
 
 class Projects extends Component {
@@ -26,26 +27,9 @@ class Projects extends Component {
     return (
       <div className = "projects">
           <div className = "header-container">
-              <div className = "header">Projects.</div>
+              Projects.
           </div>
-              <div className = "card-container">
-                {imgs.map((img, i) => (
-                  <Fade key = {i}>
-                    <div className = {img[0]}>
-                      <ProjectCard 
-                        id = {img[0]}
-                        options = {img[1]}
-                        image = {img[2]}
-                        />
-                    </div>
-                    <img 
-                      src = {linebreak}
-                      alt = ''
-                      className = "line-break" 
-                    />
-                  </Fade>
-                  ))}
-            </div>
+        <Project />
       </div>
     );
   }

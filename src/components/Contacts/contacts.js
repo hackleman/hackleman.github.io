@@ -10,7 +10,7 @@ class Contacts extends Component {
     return (
       <div className = "contacts">
           <div className = "header-container">
-              <div className = "header">Contact.</div>
+              Contact.
           </div>
           <div className = "body-container">
             <div className = "name-container">
