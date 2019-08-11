@@ -20,7 +20,5 @@ module.exports = {
         languages : [['1', 'Javascript'], ['2', 'Python'], ['3', 'SQL'], ['4', 'C/C#']],
         frameworks : [['4', 'Angular'], ['5', 'React'], ['10', 'Express']],
         tech : [['6', 'Oracle'], ['8', 'MongoDB'], ['9', 'Node.JS'], ['11', 'PostgreSQL']]
-    }
-    
-    
+    } 
 };

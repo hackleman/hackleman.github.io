@@ -107,13 +107,22 @@ class Landing extends Component {
 
               </div>
             </LinkScroll>
-            <div className = "contact-button" onClick={this.scrollToBottom}>
+            <LinkScroll
+                activeClass="active"
+                to="contacts"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={1000}
+              >
+            <div className = "contact-button">
               <div id = "landing-button" >
                 <div className = "button-content">
                   Contact.
                 </div>
               </div>
             </div>
+            </LinkScroll>
 
           </div>
       </div>

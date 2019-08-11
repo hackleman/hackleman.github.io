@@ -19,11 +19,14 @@ function App() {
         <About 
           id = "skills"
         />
+
         <Projects
           id = "projects"
         />
+        
         <Skills
         />
+        
         <Contacts
           id = "contacts"
         />
