@@ -61,7 +61,7 @@ class Contacts extends Component {
                     className = "githublogo"
                 />
               </a>
-              <a href='https://linkedin.com' className = "link-container" >
+              <a href='https://www.linkedin.com/in/jason-hackleman-01a2b7175/' className = "link-container" >
                 <img 
                     src = {linkedinlogo}
                     alt = ''

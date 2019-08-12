@@ -17,9 +17,9 @@ class Projects extends Component {
   
   render() {
     const imgs = [
-      ["card1", "project1", project1img],
-      ["card2", "project2", project2img],
-      ["card3", "project3", project3img],
+      ["card1", "project1", project1img, 'http://icky-class.surge.sh/'],
+      ["card2", "project2", project2img, 'https://still-eyrie-27550.herokuapp.com/'],
+      ["card3", "project3", project3img, 'http://complete-rifle.surge.sh/'],
     ];
 
     return (
@@ -32,9 +32,14 @@ class Projects extends Component {
                 <Fade>
                   <div className = "card-container-sidebar">
                     <div className = "card-container">
-                          <div className = "card-image">
+                          
+                          <a href={img[3]}>
+                            <div className = "card-image">
                               <img alt = '' src = {img[2]} />
-                          </div>
+                            </div>
+                          </a>
+                              
+                          
                           <div className = "card-description">
                               {config[img[1]].description}
                           </div>
@@ -43,7 +48,6 @@ class Projects extends Component {
                 </Fade>
               ))}
           </div>
-
       </div>
     );
   }
