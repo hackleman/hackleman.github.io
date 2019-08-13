@@ -68,7 +68,7 @@ class Contacts extends Component {
                     className = "linkedinlogo" 
                 />
               </a>
-              <a href='https://linkedin.com' className = "link-container" >
+              <a href='mailto:hackleman.jason@gmail.com' className = "link-container" >
                 <img 
                     src = {emaillogo}
                     alt = ''

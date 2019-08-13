@@ -17,9 +17,9 @@ class Projects extends Component {
   
   render() {
     const imgs = [
-      ["card1", "project1", project1img, 'http://icky-class.surge.sh/'],
-      ["card2", "project2", project2img, 'https://still-eyrie-27550.herokuapp.com/'],
-      ["card3", "project3", project3img, 'http://complete-rifle.surge.sh/'],
+      ["card1", "project1", project1img, 'http://icky-class.surge.sh/', 'https://github.com/hackleman/taxi-insights'],
+      ["card2", "project2", project2img, 'https://still-eyrie-27550.herokuapp.com/', 'https://github.com/hackleman/US-Hackathon'],
+      ["card3", "project3", project3img, 'http://complete-rifle.surge.sh/', 'https://github.com/hackleman/guitar-scrapers'],
     ];
 
     return (
@@ -32,18 +32,26 @@ class Projects extends Component {
                 <Fade>
                   <div className = "card-container-sidebar">
                     <div className = "card-container">
-                          
-                          <a href={img[3]}>
-                            <div className = "card-image">
-                              <img alt = '' src = {img[2]} />
-                            </div>
-                          </a>
-                              
-                          
-                          <div className = "card-description">
-                              {config[img[1]].description}
+                      <div className = "card-image">
+                        <img alt = '' src = {img[2]} />
+                      </div>
+                      <div className = "card-description">
+
+                          {config[img[1]].description}
+                          <div className = "card-links">
+                            <a href={img[3]}>
+                              <div className = "demo-link">
+                                Demo.
+                              </div>
+                            </a>
+                            <a href={img[4]}>
+                              <div className = "github-link">
+                                Github.
+                              </div>
+                            </a>
                           </div>
                       </div>
+                    </div>
                   </div>
                 </Fade>
               ))}
